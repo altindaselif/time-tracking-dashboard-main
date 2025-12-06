@@ -10,8 +10,8 @@ This is a Time Tracking Dashboard that you can use on your websites.
 
 ## Links
 
-- **GitHub Repository:** [View Code](https://github.com/altindaselif/newsletter-sign-up-with-success-message-main)
-- **Live Demo:** [View Live Site](https://altindaselif.github.io/newsletter-sign-up-with-success-message-main/)
+- **GitHub Repository:** [View Code](https://github.com/altindaselif/time-tracking-dashboard-main)
+- **Live Demo:** [View Live Site](https://altindaselif.github.io/time-tracking-dashboard-main/)
 
 ## Built With
 
