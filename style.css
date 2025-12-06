@@ -108,13 +108,16 @@ body {
   padding: var(--spacing-400);
 }
 
-.main-timeframe {
+.main-timeframe,
+.side-button {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   text-align: left;
+}
 
+.main-timeframe {
   font: var(--tp-5);
   color: var(--purple-500);
   font-family: inherit;

@@ -36,26 +36,56 @@
             <h1 class="main-name">Jeremy Robson</h1>
           </div>
         </div>
-        <div class="main-timeframes">
-          <button class="main-timeframe" data-type="daily">Daily</button>
-          <button class="main-timeframe active" data-type="weekly">
+        <div
+          class="main-timeframes"
+          role="group"
+          aria-label="Select time frame"
+        >
+          <button
+            type="button"
+            class="main-timeframe"
+            data-type="daily"
+            aria-pressed="false"
+          >
+            Daily
+          </button>
+          <button
+            type="button"
+            class="main-timeframe active"
+            data-type="weekly"
+            aria-pressed="true"
+          >
             Weekly
           </button>
-          <button class="main-timeframe" data-type="monthly">Monthly</button>
+          <button
+            type="button"
+            class="main-timeframe"
+            data-type="monthly"
+            aria-pressed="false"
+          >
+            Monthly
+          </button>
         </div>
       </section>
       <section class="side work">
         <div class="side-container">
           <div class="side-header">
             <div>Work</div>
-            <img
-              class="side-icon"
-              src="images/icon-ellipsis.svg"
-              alt="More Icon"
-            />
+            <button
+              type="button"
+              class="side-button"
+              aria-label="More options for Work"
+            >
+              <img
+                class="side-icon"
+                src="images/icon-ellipsis.svg"
+                alt="More Icon"
+                aria-hidden="true"
+              />
+            </button>
           </div>
           <div class="side-time">
-            <h2 class="side-hours">32hrs</h2>
+            <p class="side-hours">32hrs</p>
             <p class="side-history">Last Week - 36hrs</p>
           </div>
         </div>
@@ -64,10 +94,21 @@
         <div class="side-container">
           <div class="side-header">
             <div>Play</div>
-            <img src="images/icon-ellipsis.svg" alt="More Icon" />
+            <button
+              type="button"
+              class="side-button"
+              aria-label="More options for Work"
+            >
+              <img
+                class="side-icon"
+                src="images/icon-ellipsis.svg"
+                alt="More Icon"
+                aria-hidden="true"
+              />
+            </button>
           </div>
           <div class="side-time">
-            <h2 class="side-hours">10hrs</h2>
+            <p class="side-hours">10hrs</p>
             <p class="side-history">Last Week - 8hrs</p>
           </div>
         </div>
@@ -76,10 +117,21 @@
         <div class="side-container">
           <div class="side-header">
             <div>Study</div>
-            <img src="images/icon-ellipsis.svg" alt="More Icon" />
+            <button
+              type="button"
+              class="side-button"
+              aria-label="More options for Work"
+            >
+              <img
+                class="side-icon"
+                src="images/icon-ellipsis.svg"
+                alt="More Icon"
+                aria-hidden="true"
+              />
+            </button>
           </div>
           <div class="side-time">
-            <h2 class="side-hours">4hrs</h2>
+            <p class="side-hours">4hrs</p>
             <p class="side-history">Last Week - 7hrs</p>
           </div>
         </div>
@@ -88,10 +140,21 @@
         <div class="side-container">
           <div class="side-header">
             <div>Exercise</div>
-            <img src="images/icon-ellipsis.svg" alt="More Icon" />
+            <button
+              type="button"
+              class="side-button"
+              aria-label="More options for Work"
+            >
+              <img
+                class="side-icon"
+                src="images/icon-ellipsis.svg"
+                alt="More Icon"
+                aria-hidden="true"
+              />
+            </button>
           </div>
           <div class="side-time">
-            <h2 class="side-hours">4hrs</h2>
+            <p class="side-hours">4hrs</p>
             <p class="side-history">Last Week - 5hrs</p>
           </div>
         </div>
@@ -100,14 +163,21 @@
         <div class="side-container">
           <div class="side-header">
             <div class="side-name">Social</div>
-            <img
-              class="side-icon"
-              src="images/icon-ellipsis.svg"
-              alt="More Icon"
-            />
+            <button
+              type="button"
+              class="side-button"
+              aria-label="More options for Work"
+            >
+              <img
+                class="side-icon"
+                src="images/icon-ellipsis.svg"
+                alt="More Icon"
+                aria-hidden="true"
+              />
+            </button>
           </div>
           <div class="side-time">
-            <h2 class="side-hours">5hrs</h2>
+            <p class="side-hours">5hrs</p>
             <p class="side-history">Last Week - 10hrs</p>
           </div>
         </div>
@@ -116,14 +186,21 @@
         <div class="side-container">
           <div class="side-header">
             <div class="side-name">Self Care</div>
-            <img
-              class="side-icon"
-              src="images/icon-ellipsis.svg"
-              alt="More Icon"
-            />
+            <button
+              type="button"
+              class="side-button"
+              aria-label="More options for Work"
+            >
+              <img
+                class="side-icon"
+                src="images/icon-ellipsis.svg"
+                alt="More Icon"
+                aria-hidden="true"
+              />
+            </button>
           </div>
           <div class="side-time">
-            <h2 class="side-hours">2hrs</h2>
+            <p class="side-hours">2hrs</p>
             <p class="side-history">Last Week - 2hrs</p>
           </div>
         </div>
