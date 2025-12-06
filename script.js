@@ -24,22 +24,32 @@ const updateCards = function (timeframe) {
 
 fetch("./data.json")
   .then((response) => {
-    if (!response.ok) return console.log("Veri çekilemedi!");
+    if (!response.ok) {
+      throw new Error("Veri çekilemedi, bir sorun var!");
+    }
     return response.json();
   })
   .then((data) => {
     jsonData = data;
     updateCards("weekly");
+  })
+  .catch((error) => {
+    console.error("Hata yakalandı:", error);
   });
 
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
-    buttons.forEach((btn) => btn.classList.remove("active"));
+    buttons.forEach((btn) => {
+      btn.classList.remove("active");
+      btn.setAttribute("aria-pressed", "false");
+    });
 
-    e.target.classList.add("active");
+    const clickedButton = e.currentTarget;
+
+    clickedButton.classList.add("active");
+    clickedButton.setAttribute("aria-pressed", "true");
 
     const timeframe = e.target.dataset.type;
-
     updateCards(timeframe);
   });
 });
