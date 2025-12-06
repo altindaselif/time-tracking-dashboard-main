@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Time Tracking Dashboard</title>
+  </head>
+  <body>
+    <main class="dashboard-container">
+      <section class="main">
+        <div class="main-header">
+          <img
+            class="main-img"
+            src="images/image-jeremy.png"
+            alt="Person Profile Picture"
+          />
+          <div>
+            <p class="main-info">Report for</p>
+            <h1 class="main-name">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="main-timeframes">
+          <button class="main-timeframe" data-type="daily">Daily</button>
+          <button class="main-timeframe active" data-type="weekly">
+            Weekly
+          </button>
+          <button class="main-timeframe" data-type="monthly">Monthly</button>
+        </div>
+      </section>
+      <section class="side work">
+        <div class="side-container">
+          <div class="side-header">
+            <div>Work</div>
+            <img
+              class="side-icon"
+              src="images/icon-ellipsis.svg"
+              alt="More Icon"
+            />
+          </div>
+          <div class="side-time">
+            <h2 class="side-hours">32hrs</h2>
+            <p class="side-history">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="side play">
+        <div class="side-container">
+          <div class="side-header">
+            <div>Play</div>
+            <img src="images/icon-ellipsis.svg" alt="More Icon" />
+          </div>
+          <div class="side-time">
+            <h2 class="side-hours">10hrs</h2>
+            <p class="side-history">Last Week - 8hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="side study">
+        <div class="side-container">
+          <div class="side-header">
+            <div>Study</div>
+            <img src="images/icon-ellipsis.svg" alt="More Icon" />
+          </div>
+          <div class="side-time">
+            <h2 class="side-hours">4hrs</h2>
+            <p class="side-history">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="side exercise">
+        <div class="side-container">
+          <div class="side-header">
+            <div>Exercise</div>
+            <img src="images/icon-ellipsis.svg" alt="More Icon" />
+          </div>
+          <div class="side-time">
+            <h2 class="side-hours">4hrs</h2>
+            <p class="side-history">Last Week - 5hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="side social">
+        <div class="side-container">
+          <div class="side-header">
+            <div class="side-name">Social</div>
+            <img
+              class="side-icon"
+              src="images/icon-ellipsis.svg"
+              alt="More Icon"
+            />
+          </div>
+          <div class="side-time">
+            <h2 class="side-hours">5hrs</h2>
+            <p class="side-history">Last Week - 10hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="side selfcare">
+        <div class="side-container">
+          <div class="side-header">
+            <div class="side-name">Self Care</div>
+            <img
+              class="side-icon"
+              src="images/icon-ellipsis.svg"
+              alt="More Icon"
+            />
+          </div>
+          <div class="side-time">
+            <h2 class="side-hours">2hrs</h2>
+            <p class="side-history">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
