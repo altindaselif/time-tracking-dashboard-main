@@ -34,7 +34,7 @@ fetch("./data.json")
     updateCards("weekly");
   })
   .catch((error) => {
-    console.error("Hata yakalandı:", error);
+    console.error("Error:", error);
   });
 
 buttons.forEach((button) => {
@@ -49,7 +49,7 @@ buttons.forEach((button) => {
     clickedButton.classList.add("active");
     clickedButton.setAttribute("aria-pressed", "true");
 
-    const timeframe = e.target.dataset.type;
+    const timeframe = clickedButton.dataset.type;
     updateCards(timeframe);
   });
 });
