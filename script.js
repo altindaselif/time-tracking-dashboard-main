@@ -22,20 +22,24 @@ const updateCards = function (timeframe) {
   });
 };
 
-fetch("./data.json")
-  .then((response) => {
+async function initApp() {
+  try {
+    const response = await fetch("./data.json");
+
     if (!response.ok) {
       throw new Error("Veri çekilemedi, bir sorun var!");
     }
-    return response.json();
-  })
-  .then((data) => {
+
+    const data = await response.json();
     jsonData = data;
+
     updateCards("weekly");
-  })
-  .catch((error) => {
+  } catch (error) {
     console.error("Error:", error);
-  });
+  }
+}
+
+initApp();
 
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
