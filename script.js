@@ -27,7 +27,7 @@ const initApp = async function () {
     const response = await fetch("./data.json");
 
     if (!response.ok) {
-      throw new Error("Veri çekilemedi, bir sorun var!");
+      throw new Error("Failed to load data.");
     }
 
     const data = await response.json();
