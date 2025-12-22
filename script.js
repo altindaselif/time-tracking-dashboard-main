@@ -22,7 +22,7 @@ const updateCards = function (timeframe) {
   });
 };
 
-async function initApp() {
+const initApp = async function () {
   try {
     const response = await fetch("./data.json");
 
@@ -37,7 +37,7 @@ async function initApp() {
   } catch (error) {
     console.error("Error:", error);
   }
-}
+};
 
 initApp();
 
